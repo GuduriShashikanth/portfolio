@@ -1,4 +1,5 @@
 import React from 'react';
+import shashii from'../assets/images/shashii.jpg';
 const About = () => {
   return (
     <section className="bg-[#0a192f] h-full w-full  text-gray-300 py-20 px-6 md:px-20" id="about">
@@ -46,7 +47,7 @@ const About = () => {
           {/* Foreground Image */}
           <div className="relative w-64 h-59 overflow-hidden rounded-md border-2 border-teal-400 z-10 transform transition duration-300 group-hover:scale-105 animate-float">
             <img
-              src={`${import.meta.env.BASE_URL}/shashii.jpg`}
+              src={shashii}
               alt="Shashikanth Guduri"
               fill='true'
     

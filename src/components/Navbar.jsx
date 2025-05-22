@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-
+import resume from "../assets/SHASHI-RESUME.pdf";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,7 +33,7 @@ const Navbar = () => {
             <a to="#contact">Contact</a>
           </li>
           <li className="hover:font-extrabold transition-all duration-300">
-            <a href="/SHASHI-RESUME.pdf" target="_blank" rel="noopener noreferrer">
+            <a href={resume} target="_blank" rel="noopener noreferrer">
               Resume
             </a>
           </li>
@@ -63,7 +63,8 @@ const Navbar = () => {
             <p className="hover:font-extrabold">Contact</p>
           </a>
           <a
-            href="/SHASHI-RESUME.pdf"
+            href={resume}
+            open
             target="_blank"
             rel="noopener noreferrer"
             className="hover:font-extrabold block"

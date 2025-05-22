@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import About from './components/About'
 import Experience from './components/Experience'
 import Contact from './components/Contact'
+import resume from './assets/SHASHI-RESUME.pdf'
 
 
 function App() {
@@ -55,7 +56,8 @@ function App() {
           {/* Resume Button */}
           <div className="mt-10 flex justify-center md:justify-start">
             <a
-              href="/SHASHI-RESUME.pdf"
+              href={resume}
+              open
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 bg-gray-800 text-white rounded-xl shadow hover:bg-gray-900 transition"
