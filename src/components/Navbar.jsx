@@ -18,19 +18,19 @@ const Navbar = () => {
     
         <ul className="hidden md:flex items-center gap-6 font-semibold text-black">
           <li className="hover:font-extrabold transition-all duration-300">
-            <a  to="#home">Home</a>
+            <a  href="#home">Home</a>
           </li>
           <li className="hover:font-extrabold transition-all duration-300">
-            <a  to="#about">About</a>
+            <a  href="#about">About</a>
           </li>
           <li className="hover:font-extrabold transition-all duration-300">
-            <a  to="#experience">Experience</a>
+            <a  href="#experience">Experience</a>
           </li>
           <li className="hover:font-extrabold transition-all duration-300">
-            <a  to="#projects">Projects</a>
+            <a  href="#projects">Projects</a>
           </li>
           <li className="hover:font-extrabold transition-all duration-300">
-            <a to="#contact">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
           <li className="hover:font-extrabold transition-all duration-300">
             <a href={resume} target="_blank" rel="noopener noreferrer">
@@ -47,19 +47,19 @@ const Navbar = () => {
       </div>
       {isOpen && (
         <div className="md:hidden bg-teal-300 px-6 py-4 space-y-3 text-black font-semibold">
-          <a href="/" onClick={toggleMenu}>
+          <a href="#home" onClick={toggleMenu}>
             <p className="hover:font-extrabold">Home</p>
           </a>
-          <a href="/about" onClick={toggleMenu}>
+          <a href="#about" onClick={toggleMenu}>
             <p className="hover:font-extrabold">About</p>
           </a>
-          <a href="/experience" onClick={toggleMenu}>
+          <a href="#experience" onClick={toggleMenu}>
             <p className="hover:font-extrabold">Experience</p>
           </a>
-          <a href="/projects" onClick={toggleMenu}>
+          <a href="#projects" onClick={toggleMenu}>
             <p className="hover:font-extrabold">Projects</p>
           </a>
-          <a href="/contact" onClick={toggleMenu}>
+          <a href="#contact" onClick={toggleMenu}>
             <p className="hover:font-extrabold">Contact</p>
           </a>
           <a

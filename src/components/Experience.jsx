@@ -45,55 +45,55 @@ const Experience = () => {
           <ul className="flex flex-col space-y-2">
             <li className="flex gap-5">
               <a
-                to="https://smartinterviews.in/certificate/21d947ef"
+                href="https://smartinterviews.in/certificate/21d947ef"
                 target="_blank"
               >
                 <strong>Data Structures & Algorithms</strong> – Smart Interviews
               </a>
               <a
-                to="https://smartinterviews.in/certificate/21d947ef"
+                href="https://smartinterviews.in/certificate/21d947ef"
                 target="_blank"
               >
-                <span className="text-teal-400">a</span>
+                <span className="text-teal-400"> Link </span>
               </a>
             </li>
             <li className="flex gap-5">
               <a
-                to=" https://www.udemy.com/certificate/UC-7568819a-57e4-4304-b14a-7b24c3aa1942/"
+                href=" https://www.udemy.com/certificate/UC-7568819a-57e4-4304-b14a-7b24c3aa1942/"
                 target="_blank"
               >
                 <strong>Full Stack Web Development</strong> – Udemy
               </a>
               <a
-                to="https://www.udemy.com/certificate/UC-7568819a-57e4-4304-b14a-7b24c3aa1942/"
+                href="https://www.udemy.com/certificate/UC-7568819a-57e4-4304-b14a-7b24c3aa1942/"
                 target="_blank"
               >
-                <span className="text-teal-400">a</span>
+                <span className="text-teal-400"> Link </span>
               </a>
             </li>
             <li className="flex gap-5">
-              <a to="https://www.udemy.com/certificate/UC-9ab6aac8-4b9e-40f4-b17c-88ecfc98adbb/" target="_blank">
+              <a href="https://www.udemy.com/certificate/UC-9ab6aac8-4b9e-40f4-b17c-88ecfc98adbb/" target="_blank">
                 <strong>Python & Flask Framework</strong> – Udemy
               </a>
               <a
-                to="https://www.udemy.com/certificate/UC-9ab6aac8-4b9e-40f4-b17c-88ecfc98adbb/"
+                href="https://www.udemy.com/certificate/UC-9ab6aac8-4b9e-40f4-b17c-88ecfc98adbb/"
                 target="_blank"
               >
-                <span className="text-teal-400">a</span>
+                <span className="text-teal-400"> Link </span>
               </a>
             </li>
             <li className="flex gap-5">
               <a
-                to=" https://www.hackerrank.com/certificates/2bff4bb45a8c"
+                href=" https://www.hackerrank.com/certificates/2bff4bb45a8c"
                 target="_blank"
               >
                 <strong>SQL Advanced</strong> – Hacker
               </a>
               <a
-                to="https://www.hackerrank.com/certificates/2bff4bb45a8c"
+                href="https://www.hackerrank.com/certificates/2bff4bb45a8c"
                 target="_blank"
               >
-                <span className="text-teal-400">a</span>
+                <span className="text-teal-400"> Link </span>
               </a>
             </li>
           </ul>
