@@ -46,7 +46,7 @@ const About = () => {
           {/* Foreground Image */}
           <div className="relative w-64 h-59 overflow-hidden rounded-md border-2 border-teal-400 z-10 transform transition duration-300 group-hover:scale-105 animate-float">
             <img
-              src="/shashii.jpg"
+              src={`${import.meta.env.BASE_URL}/shashii.jpg`}
               alt="Shashikanth Guduri"
               fill='true'
     
