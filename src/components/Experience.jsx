@@ -1,4 +1,3 @@
-
 import React from "react";
 
 const Experience = () => {
@@ -13,30 +12,45 @@ const Experience = () => {
         </h2>
 
         <div className="space-y-10">
-          {/* DRDO Intern */}
-          <div className="bg-[#112240] p-6 rounded-lg shadow-md hover:shadow-xl transition">
-            <h3 className="text-xl md:text-2xl font-semibold text-white">
-              Machine Learning Intern – DRDO, Hyderabad
-            </h3>
-            <p className="text-sm text-teal-300">March 2025 – Present</p>
-            <ul className="list-disc list-inside mt-3 space-y-2 text-gray-400 text-base">
-              <li>
-                Gained hands-on experience with CNNs, RNNs, and DNNs, focusing
-                on evaluation and deployment.
-              </li>
-              <li>
-                Worked with senior scientists on real-world ML problems using
-                Python and TensorFlow.
-              </li>
-              <li>
-                Built, trained, and optimized deep learning models on diverse
-                datasets.
-              </li>
-            </ul>
-          </div>
+  {/* Junior Developer – Todays Dental Services */}
+  <div className="bg-[#112240] p-6 rounded-lg shadow-md hover:shadow-xl transition">
+    <h3 className="text-xl md:text-2xl font-semibold text-white">
+      Junior Developer – Todays Dental Services, Hyderabad
+    </h3>
+    <p className="text-sm text-teal-300">June 2025 – Present</p>
+    <ul className="list-disc list-inside mt-3 space-y-2 text-gray-400 text-base">
+      <li>
+        Collaborated in developing scalable web interfaces using React and Node.js, improving UI responsiveness and code maintainability.
+      </li>
+      <li>
+        Built and integrated RESTful APIs, leveraging AWS services such as Lambda, S3, and DynamoDB for scalable cloud-based solutions.
+      </li>
+      <li>
+        Enhanced application performance and user experience by optimizing frontend and backend workflows.
+      </li>
+    </ul>
+  </div>
 
-          {/* Add more experiences here if needed */}
-        </div>
+  {/* ML Intern – DRDO */}
+  <div className="bg-[#112240] p-6 rounded-lg shadow-md hover:shadow-xl transition">
+    <h3 className="text-xl md:text-2xl font-semibold text-white">
+      Machine Learning Intern – DRDO, Hyderabad
+    </h3>
+    <p className="text-sm text-teal-300">March 2025 – May 2025</p>
+    <ul className="list-disc list-inside mt-3 space-y-2 text-gray-400 text-base">
+      <li>
+        Gained hands-on experience with CNNs, RNNs, and DNNs, focusing on evaluation and deployment.
+      </li>
+      <li>
+        Collaborated with senior scientists to learn and apply ML algorithms on real-world datasets.
+      </li>
+      <li>
+        Developed and trained deep learning models using TensorFlow, focusing on model performance optimization.
+      </li>
+    </ul>
+  </div>
+</div>
+
         <h2 className="text-2xl  font-bold text-teal-400 mt-20 mb-10">
           <span className="text-gray-200">Certifications</span>
         </h2>
@@ -72,7 +86,10 @@ const Experience = () => {
               </a>
             </li>
             <li className="flex gap-5">
-              <a href="https://www.udemy.com/certificate/UC-9ab6aac8-4b9e-40f4-b17c-88ecfc98adbb/" target="_blank">
+              <a
+                href="https://www.udemy.com/certificate/UC-9ab6aac8-4b9e-40f4-b17c-88ecfc98adbb/"
+                target="_blank"
+              >
                 <strong>Python & Flask Framework</strong> – Udemy
               </a>
               <a
