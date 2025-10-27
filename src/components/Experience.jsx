@@ -8,7 +8,7 @@ const Experience = () => {
     >
       <div className="max-w-6xl mx-auto">
         <h2 className="text-2xl   font-bold text-teal-400 mb-10">
-          <span className="text-gray-200">Experience</span>
+          <span className="text-gray-300">Experience</span>
         </h2>
 
         <div className="space-y-10">
@@ -52,7 +52,7 @@ const Experience = () => {
 </div>
 
         <h2 className="text-2xl  font-bold text-teal-400 mt-20 mb-10">
-          <span className="text-gray-200">Certifications</span>
+          <span className="text-gray-300">Certifications</span>
         </h2>
 
         <div className="bg-[#112240] p-6 rounded-lg  shadow-md transition space-y-4 text-base text-gray-300">

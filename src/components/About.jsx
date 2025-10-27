@@ -8,7 +8,7 @@ const About = () => {
         {/* Left Text Section */}
         <div>
           <h2 className="text-2xl text-teal-400 font-bold mb-6">
-            <span className="text-gray-200">About Me</span>
+            <span className="text-gray-300">About Me</span>
           </h2>
 
           <p className="mb-4 leading-relaxed">
