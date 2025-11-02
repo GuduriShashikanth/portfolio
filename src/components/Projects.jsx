@@ -2,7 +2,15 @@ import React from "react";
 
 const Projects = () => {
   const projects = [
-     {
+       {
+      title: "Versera — Poem Generator",
+      description:
+        "A creative web app that generates personalized poems based on mood and keywords. Built with React, Tailwind CSS, Node.js, and Express, and deployed seamlessly using Netlify and Render.",
+      tech: ["React", "Tailwind CSS", "Node.js", "Express", "Render", "Netlify"],
+      demo: "https://versera.netlify.app/", // replace with your actual frontend URL
+      github: "https://github.com/GuduriShashikanth/poem-generator-frontend", // replace with your repo link
+    }, 
+    {
       title: "EchoScribe — Seamless Audio Transcription Tool",
       description:
         "A real-time multilingual transcription app using Flask, Vosk, and NLP models for translation and punctuation correction.",
