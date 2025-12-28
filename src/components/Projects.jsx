@@ -2,7 +2,25 @@ import React from "react";
 
 const Projects = () => {
   const projects = [
-       {
+   {
+  title: "CoTask — Collaborative Task Management Platform",
+  description:
+    "A full-stack collaborative task management platform enabling real-time task creation, assignment, and updates. Features JWT-based authentication, role-based access control, live notifications via Socket.io, and a scalable layered backend architecture.",
+  tech: [
+    "React",
+    "Vite",
+    "TypeScript",
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "Socket.io",
+    "JWT",
+    "Netlify",
+    "Render",
+  ],
+  demo: "https://cotask.netlify.app",
+  github: "https://github.com/GuduriShashikanth/TaskManager", // change if repo name differs
+},{
       title: "Versera — Poem Generator",
       description:
         "A creative web app that generates personalized poems based on mood and keywords. Built with React, Tailwind CSS, Node.js, and Express, and deployed seamlessly using Netlify and Render.",
