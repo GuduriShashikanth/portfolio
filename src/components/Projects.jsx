@@ -2,6 +2,34 @@ import React from "react";
 
 const Projects = () => {
   const projects = [
+    {
+      title: "FlickPage — AI-Powered Movie & Book Recommendation Platform",
+      description:
+        "A sophisticated full-stack web application providing personalized movie and book recommendations using advanced AI algorithms and semantic search. Features hybrid recommendation system combining collaborative filtering, content-based filtering, and popularity-based algorithms with K-Nearest Neighbors and cosine similarity. Processes 15,000+ items with sub-second response times using 384-dimensional embeddings.",
+      tech: [
+        "React",
+        "Zustand",
+        "TypeScript",
+        "Python 3.13",
+        "FastAPI",
+        "PostgreSQL",
+        "pgvector",
+        "FastEmbed",
+        "ONNX Runtime",
+        "Supabase",
+        "Tailwind CSS",
+        "Zustand",
+        "JWT",
+        "bcrypt",
+        "TMDB API",
+        "Google Books API",
+        "Vercel",
+        "Koyeb",
+      ],
+      demo: "https://flickpage.vercel.app/",
+      githubFrontend: "https://github.com/GuduriShashikanth/FlickPage-Frontend",
+      githubBackend: "https://github.com/GuduriShashikanth/FlickPage-Backend",
+    },
    {
   title: "CoTask — Collaborative Task Management Platform",
   description:
@@ -26,7 +54,8 @@ const Projects = () => {
         "A creative web app that generates personalized poems based on mood and keywords. Built with React, Tailwind CSS, Node.js, and Express, and deployed seamlessly using Netlify and Render.",
       tech: ["React", "Tailwind CSS", "Node.js", "Express", "Render", "Netlify"],
       demo: "https://versera.netlify.app/", // replace with your actual frontend URL
-      github: "https://github.com/GuduriShashikanth/poem-generator-frontend", // replace with your repo link
+      githubFrontend: "https://github.com/GuduriShashikanth/poem-generator-frontend",
+      githubBackend: "https://github.com/GuduriShashikanth/poem-generator-backend",
     }, 
     {
       title: "EchoScribe — Seamless Audio Transcription Tool",
@@ -49,7 +78,8 @@ const Projects = () => {
         "A full-stack URL shortener built with React, Node.js, Express, and MongoDB. Generates short, shareable links with a backend hosted on Render and frontend deployed on Netlify.",
       tech: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
       demo: "https://shorttt.netlify.app/",
-      github: "https://github.com/GuduriShashikanth/urlshortenerfrontend",
+      githubFrontend: "https://github.com/GuduriShashikanth/urlshortenerfrontend",
+      githubBackend: "https://github.com/GuduriShashikanth/urlshortenerbackend",
     },
    
     {
@@ -102,7 +132,7 @@ const Projects = () => {
                 ))}
               </div>
 
-              <div className="flex gap-4 mt-4">
+              <div className="flex gap-4 mt-4 flex-wrap">
                 {project.demo && (
                   <a
                     href={project.demo}
@@ -113,14 +143,37 @@ const Projects = () => {
                     Live Demo
                   </a>
                 )}
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-4 py-2 bg-gray-800 text-white font-semibold rounded-lg hover:bg-gray-900 transition"
-                >
-                  GitHub
-                </a>
+                {project.githubFrontend && project.githubBackend ? (
+                  <>
+                    <a
+                      href={project.githubFrontend}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-4 py-2 bg-gray-800 text-white font-semibold rounded-lg hover:bg-gray-900 transition"
+                    >
+                     Github Frontend
+                    </a>
+                    <a
+                      href={project.githubBackend}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-4 py-2 bg-gray-800 text-white font-semibold rounded-lg hover:bg-gray-900 transition"
+                    >
+                     Github Backend
+                    </a>
+                  </>
+                ) : (
+                  project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-4 py-2 bg-gray-800 text-white font-semibold rounded-lg hover:bg-gray-900 transition"
+                    >
+                      GitHub
+                    </a>
+                  )
+                )}
               </div>
             </div>
           ))}
