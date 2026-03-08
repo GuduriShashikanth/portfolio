@@ -2,6 +2,28 @@ import React from "react";
 
 const Projects = () => {
   const projects = [
+ {
+  title: "GitHub Code Explainer — Intelligent GitHub Repository Explorer",
+  description:
+    "An intelligent full-stack app that lets you explore any GitHub repository through natural language Q&A. Paste a repo URL and instantly chat with the codebase — ask about architecture, specific files, or how any function works. Built on a high-speed RAG pipeline using FAISS vector search and Groq LLM inference, with real-time streaming responses.",
+  tech: [
+    "React",
+    "TypeScript",
+    "Vite",
+    "Python",
+    "FastAPI",
+    "LangChain",
+    "FAISS",
+    "Sentence Transformers",
+    "Groq",
+    "HuggingFace Spaces",
+    "Vercel",
+  ],
+  demo: "https://githubcodeexplainer.vercel.app/", // replace with your actual URL
+  github: "https://github.com/GuduriShashikanth/Githubcodeexplainer",
+},
+
+ 
     {
       title: "FlickPage — AI-Powered Movie & Book Recommendation Platform",
       description:
