@@ -1,58 +1,76 @@
-"use client";
 import React from "react";
 import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <section className="bg-[#0a192f]  text-gray-300 h-screen flex flex-col justify-center items-center  px-6" id="contact">
-      <h2 className="text-4xl font-bold text-teal-400 mb-4">Get in Touch</h2>
-      <p className="text-gray-400 mb-10 text-center text-lg max-w-xl">
-        Feel free to reach out to me via any of the platforms below. I am always open to networking, collaboration, or just a friendly hello!
-      </p>
+    <section
+      id="contact"
+      className="py-2"
+    >
+      <div className="space-y-8">
+        <div className="space-y-3">
+          
+          <h2 className="text-3xl font-semibold text-white sm:text-4xl">
+            Get in Touch
+          </h2>
+          <p className="max-w-2xl text-sm leading-8 text-slate-300 sm:text-base">
+            Feel free to reach out to me via any of the platforms below. I am
+            always open to networking, collaboration, or just a friendly hello!
+          </p>
+        </div>
 
-      <div className="flex flex-wrap justify-center gap-6">
-        
-
-        {/* LinkedIn */}
-        <a
-          href="https://linkedin.com/in/guduri-shashikanth"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-3 px-6 py-3 border border-teal-400 text-teal-300 rounded hover:bg-teal-400 hover:text-[#0a192f] transition"
-        >
-          <FaLinkedin className="text-xl" />
-          LinkedIn
-        </a>
-        {/* GitHub */}
-        <a
-          href="https://github.com/GuduriShashikanth"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-3 px-6 py-3 border border-gray-400 text-white rounded hover:bg-gray-800 transition"
-        >
-          <FaGithub className="text-xl" />
-          GitHub
-        </a>
-
-        {/* Email */}
-        <a
-          href="mailto:shashiguduri24@gmail.com"
-          className="flex items-center gap-3 px-6 py-3 border border-blue-400 text-blue-300 rounded hover:bg-blue-400 hover:text-[#0a192f] transition"
-        >
-          <FaEnvelope className="text-xl" />
-          Email
-        </a>
-
-        {/* Instagram */}
-        <a
-          href="https://www.instagram.com/shashi_guduri/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-3 px-6 py-3 border border-pink-400 text-pink-300 rounded hover:bg-pink-400 hover:text-[#0a192f] transition"
-        >
-          <FaInstagram className="text-xl" />
-          Instagram
-        </a>
+        <div className="grid gap-4 md:grid-cols-2">
+          <a
+            href="https://linkedin.com/in/guduri-shashikanth"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-start gap-4 rounded-[1.5rem] border border-white/8 bg-white/4 p-5 transition hover:border-cyan-300/30 hover:bg-white/6"
+          >
+            <div className="mt-1 flex h-11 w-11 items-center justify-center rounded-full border border-cyan-300/20 bg-cyan-300/10 text-cyan-200">
+              <FaLinkedin className="text-base" />
+            </div>
+            <div>
+              <p className="text-lg font-medium text-white">LinkedIn</p>
+            </div>
+          </a>
+          <a
+            href="https://github.com/GuduriShashikanth"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-start gap-4 rounded-[1.5rem] border border-white/8 bg-white/4 p-5 transition hover:border-cyan-300/30 hover:bg-white/6"
+          >
+            <div className="mt-1 flex h-11 w-11 items-center justify-center rounded-full border border-white/12 bg-white/4 text-white">
+              <FaGithub className="text-base" />
+            </div>
+            <div>
+              <p className="text-lg font-medium text-white">GitHub</p>
+            </div>
+          </a>
+          <a
+            href="mailto:shashiguduri24@gmail.com"
+            className="flex items-start gap-4 rounded-[1.5rem] border border-white/8 bg-white/4 p-5 transition hover:border-cyan-300/30 hover:bg-white/6"
+          >
+            <div className="mt-1 flex h-11 w-11 items-center justify-center rounded-full border border-blue-300/20 bg-blue-300/10 text-blue-200">
+              <FaEnvelope className="text-base" />
+            </div>
+            <div>
+              <p className="text-lg font-medium text-white">Email</p>
+            </div>
+          </a>
+          <a
+            href="https://www.instagram.com/shashi.iiii_"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-start gap-4 rounded-[1.5rem] border border-white/8 bg-white/4 p-5 transition hover:border-cyan-300/30 hover:bg-white/6"
+          >
+            <div className="mt-1 flex h-11 w-11 items-center justify-center rounded-full border border-pink-300/20 bg-pink-300/10 text-pink-200">
+              <FaInstagram className="text-base" />
+            </div>
+            <div>
+              <p className="text-lg font-medium text-white">Instagram</p>
+            </div>
+          </a>
+        </div>
       </div>
     </section>
   );

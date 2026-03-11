@@ -2,28 +2,26 @@ import React from "react";
 
 const Projects = () => {
   const projects = [
- {
-  title: "GitHub Code Explainer — Intelligent GitHub Repository Explorer",
-  description:
-    "An intelligent full-stack app that lets you explore any GitHub repository through natural language Q&A. Paste a repo URL and instantly chat with the codebase — ask about architecture, specific files, or how any function works. Built on a high-speed RAG pipeline using FAISS vector search and Groq LLM inference, with real-time streaming responses.",
-  tech: [
-    "React",
-    "TypeScript",
-    "Vite",
-    "Python",
-    "FastAPI",
-    "LangChain",
-    "FAISS",
-    "Sentence Transformers",
-    "Groq",
-    "HuggingFace Spaces",
-    "Vercel",
-  ],
-  demo: "https://githubcodeexplainer.vercel.app/", // replace with your actual URL
-  github: "https://github.com/GuduriShashikanth/Githubcodeexplainer",
-},
-
- 
+    {
+      title: "GitHub Code Explainer — Intelligent GitHub Repository Explorer",
+      description:
+        "An intelligent full-stack app that lets you explore any GitHub repository through natural language Q&A. Paste a repo URL and instantly chat with the codebase — ask about architecture, specific files, or how any function works. Built on a high-speed RAG pipeline using FAISS vector search and Groq LLM inference, with real-time streaming responses.",
+      tech: [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Python",
+        "FastAPI",
+        "LangChain",
+        "FAISS",
+        "Sentence Transformers",
+        "Groq",
+        "HuggingFace Spaces",
+        "Vercel",
+      ],
+      demo: "https://githubcodeexplainer.vercel.app/",
+      github: "https://github.com/GuduriShashikanth/Githubcodeexplainer",
+    },
     {
       title: "FlickPage — AI-Powered Movie & Book Recommendation Platform",
       description:
@@ -46,45 +44,39 @@ const Projects = () => {
         "TMDB API",
         "Google Books API",
         "Vercel",
-        "Koyeb",
+
       ],
       demo: "https://flickpage.vercel.app/",
       githubFrontend: "https://github.com/GuduriShashikanth/FlickPage-Frontend",
       githubBackend: "https://github.com/GuduriShashikanth/FlickPage-Backend",
     },
-   {
-  title: "CoTask — Collaborative Task Management Platform",
-  description:
-    "A full-stack collaborative task management platform enabling real-time task creation, assignment, and updates. Features JWT-based authentication, role-based access control, live notifications via Socket.io, and a scalable layered backend architecture.",
-  tech: [
-    "React",
-    "Vite",
-    "TypeScript",
-    "Node.js",
-    "Express",
-    "MongoDB",
-    "Socket.io",
-    "JWT",
-    "Netlify",
-    "Render",
-  ],
-  demo: "https://cotask.netlify.app",
-  github: "https://github.com/GuduriShashikanth/TaskManager", // change if repo name differs
-},{
+    {
+      title: "CoTask — Collaborative Task Management Platform",
+      description:
+        "A full-stack collaborative task management platform enabling real-time task creation, assignment, and updates. Features JWT-based authentication, role-based access control, live notifications via Socket.io, and a scalable layered backend architecture.",
+      tech: [
+        "React",
+        "Vite",
+        "TypeScript",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Socket.io",
+        "JWT",
+        "Netlify",
+        "Render",
+      ],
+      demo: "https://cotask.netlify.app",
+      github: "https://github.com/GuduriShashikanth/TaskManager",
+    },
+    {
       title: "Versera — Poem Generator",
       description:
         "A creative web app that generates personalized poems based on mood and keywords. Built with React, Tailwind CSS, Node.js, and Express, and deployed seamlessly using Netlify and Render.",
       tech: ["React", "Tailwind CSS", "Node.js", "Express", "Render", "Netlify"],
-      demo: "https://versera.netlify.app/", // replace with your actual frontend URL
+      demo: "https://versera.netlify.app/",
       githubFrontend: "https://github.com/GuduriShashikanth/poem-generator-frontend",
       githubBackend: "https://github.com/GuduriShashikanth/poem-generator-backend",
-    }, 
-    {
-      title: "EchoScribe — Seamless Audio Transcription Tool",
-      description:
-        "A real-time multilingual transcription app using Flask, Vosk, and NLP models for translation and punctuation correction.",
-      tech: ["Python", "Flask", "Vosk", "T5", "Helsinki-NLP"],
-      demo: ""
     },
     {
       title: "Portfolio — My Personal Website",
@@ -103,7 +95,6 @@ const Projects = () => {
       githubFrontend: "https://github.com/GuduriShashikanth/urlshortenerfrontend",
       githubBackend: "https://github.com/GuduriShashikanth/urlshortenerbackend",
     },
-   
     {
       title: "Todo List App",
       description:
@@ -112,55 +103,102 @@ const Projects = () => {
       demo: "https://gudurishashikanth.github.io/todo-react/",
       github: "https://github.com/GuduriShashikanth/todo-react",
     },
-    {
-      title: "Number Guessing Game",
-      description:
-        "A fun JavaScript number guessing game with real-time hints and animations.",
-      tech: ["HTML", "CSS", "JavaScript"],
-      demo: "https://gudurishashikanth.github.io/html-game/",
-      github: "https://github.com/GuduriShashikanth/html-game",
-    },
   ];
+
+  const [featuredProject, ...otherProjects] = projects;
 
   return (
     <section
       id="projects"
-      className="bg-[#0a192f] text-gray-300 px-6 md:px-20 w-full"
+      className="py-2"
     >
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-2xl font-bold text-white mb-12">
-          <span className="text-white">Projects</span>
-        </h2>
+      <div className="space-y-8">
+        <div className="space-y-3">
+        
+          <h2 className="text-4xl font-semibold text-white sm:text-5xl">
+            Projects
+          </h2>
+        </div>
 
-        <div className="grid gap-10 md:grid-cols-2">
-          {projects.map((project, index) => (
-            <div
+        <article className="rounded-[2rem] border border-cyan-300/15 bg-[linear-gradient(135deg,_rgba(59,130,246,0.12),_rgba(13,28,42,0.2))] p-6 sm:p-8">
+          <p className="text-xs uppercase tracking-[0.3em] text-cyan-200/70">
+            Featured Project
+          </p>
+          <div className="mt-4 space-y-4">
+            <h3 className="break-words text-3xl font-semibold text-white sm:text-4xl">
+              {featuredProject.title}
+            </h3>
+            <p className="text-base leading-8 text-slate-300 sm:text-lg">
+              {featuredProject.description}
+            </p>
+
+            <div className="flex flex-wrap gap-2">
+              {featuredProject.tech.map((item) => (
+                <span
+                  key={item}
+                  className="rounded-full border border-white/10 bg-white/6 px-3 py-1 text-xs text-slate-200"
+                >
+                  {item}
+                </span>
+              ))}
+            </div>
+
+            <div className="flex flex-wrap gap-3">
+              {featuredProject.demo && (
+                <a
+                  href={featuredProject.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-full bg-cyan-300 px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-cyan-200"
+                >
+                  Live Demo
+                </a>
+              )}
+              {featuredProject.github && (
+                <a
+                  href={featuredProject.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-full border border-white/[0.12] px-4 py-2 text-sm font-semibold text-white transition hover:border-cyan-300 hover:text-cyan-200"
+                >
+                  GitHub
+                </a>
+              )}
+            </div>
+          </div>
+        </article>
+
+        <div className="grid gap-5 md:grid-cols-2">
+          {otherProjects.map((project, index) => (
+            <article
               key={index}
-              className="bg-[#112240] p-6 rounded-lg shadow-md hover:shadow-xl transition transform hover:-translate-y-1"
+              className="flex h-full min-w-0 flex-col rounded-[1.75rem] border border-white/8 bg-white/4 p-5 transition hover:border-cyan-300/20 hover:bg-white/6"
             >
-              <h3 className="text-xl md:text-2xl font-semibold text-white mb-2">
+              <h3 className="break-words text-2xl font-semibold text-white">
                 {project.title}
               </h3>
-              <p className="text-gray-300 mb-4">{project.description}</p>
+              <p className="mt-3 text-base leading-7 text-slate-300">
+                {project.description}
+              </p>
 
-              <div className="flex flex-wrap gap-2 mb-4">
+              <div className="mt-5 flex flex-wrap gap-2">
                 {project.tech.map((t, i) => (
                   <span
                     key={i}
-                    className="bg-teal-900 text-teal-200 text-sm px-3 py-1 rounded-full"
+                    className="rounded-full border border-white/10 px-3 py-1 text-xs text-slate-300"
                   >
                     {t}
                   </span>
                 ))}
               </div>
 
-              <div className="flex gap-4 mt-4 flex-wrap">
+              <div className="mt-auto pt-6 flex flex-wrap gap-3">
                 {project.demo && (
                   <a
                     href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2 bg-teal-500 text-[#0a192f] font-semibold rounded-lg hover:bg-teal-400 transition"
+                    className="rounded-full bg-cyan-300 px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-cyan-200"
                   >
                     Live Demo
                   </a>
@@ -171,17 +209,17 @@ const Projects = () => {
                       href={project.githubFrontend}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="px-4 py-2 bg-gray-800 text-white font-semibold rounded-lg hover:bg-gray-900 transition"
+                      className="rounded-full border border-white/[0.12] px-4 py-2 text-sm font-semibold text-white transition hover:border-cyan-300 hover:text-cyan-200"
                     >
-                     Github Frontend
+                      Github Frontend
                     </a>
                     <a
                       href={project.githubBackend}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="px-4 py-2 bg-gray-800 text-white font-semibold rounded-lg hover:bg-gray-900 transition"
+                      className="rounded-full border border-white/[0.12] px-4 py-2 text-sm font-semibold text-white transition hover:border-cyan-300 hover:text-cyan-200"
                     >
-                     Github Backend
+                      Github Backend
                     </a>
                   </>
                 ) : (
@@ -190,14 +228,14 @@ const Projects = () => {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="px-4 py-2 bg-gray-800 text-white font-semibold rounded-lg hover:bg-gray-900 transition"
+                      className="rounded-full border border-white/[0.12] px-4 py-2 text-sm font-semibold text-white transition hover:border-cyan-300 hover:text-cyan-200"
                     >
                       GitHub
                     </a>
                   )
                 )}
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>

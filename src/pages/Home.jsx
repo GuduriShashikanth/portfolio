@@ -1,50 +1,53 @@
-import resume from '../assets/SHASHI-RESUME.pdf';
 export default function Home() {
   return (
-     <section id="home" className="w-full py-20 px-6 md:px-20 flex justify-center">
-          <div className="max-w-5xl w-full text-center md:text-left flex flex-col items-center md:items-start">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-              Hi, I am <span className="text-[#f8edeb]">Shashikanth Guduri</span>
-            </h1>
+    <section
+      id="home"
+      className="flex min-h-[88vh] flex-col items-center justify-center py-12 text-center"
+    >
+      <div className="mx-auto w-full max-w-4xl space-y-6">
 
-            <p className="mt-4 text-base sm:text-lg md:text-xl font-semibold max-w-3xl">
-              Junior Web Developer @ Todays Dental Services | MERN + AWS Developer
-            </p>
+        {/* Eyebrow */}
+        <p className="text-xs font-semibold uppercase tracking-[0.35em] text-cyan-300/70">
+          Hi, I am
+        </p>
 
-            <p className="mt-2 text-base sm:text-lg md:text-xl max-w-3xl">
-              Specializing in building responsive frontend interfaces using <strong>React.js</strong> and developing serverless backend APIs with <strong>AWS Lambda</strong> and <strong>Node.js</strong>.
-            </p>
+        {/* Display name */}
+        <h1 className="text-[clamp(3.5rem,10vw,7.5rem)] font-bold leading-[1.0] tracking-tight text-white">
+          Shashikanth<br className="hidden sm:block" />{" "}
+          <span className="text-[#c8e6f5]">Guduri</span>
+        </h1>
 
-            <div className="mt-8 space-y-4 max-w-3xl">
-              <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-teal-400">
-                Glad to e-meet you!
-              </h3>
+        {/* Role */}
+        <p className="text-xs font-semibold uppercase tracking-[0.28em] text-cyan-400 sm:text-sm">
+          Junior Developer &nbsp;·&nbsp; Full Stack &nbsp;·&nbsp; AI &nbsp;·&nbsp; AWS
+        </p>
 
-              <p className="text-base sm:text-lg md:text-xl">
-                At <strong>Todays Dental Services</strong>, I work on crafting responsive frontends, integrating RESTful APIs, and enhancing UI/UX for a seamless user experience.
-              </p>
+        {/* Short bio */}
+        <p className="mx-auto max-w-lg text-base leading-8 text-slate-400 sm:text-lg">
+          Building scalable full-stack applications with{" "}
+          <strong className="font-semibold text-white">React</strong>,{" "}
+          <strong className="font-semibold text-white">Node.js</strong>,{" "}
+          <strong className="font-semibold text-white">Python (FastAPI)</strong>, and{" "}
+          <strong className="font-semibold text-white">AWS</strong>.
+        </p>
 
-              <p className="text-base sm:text-lg md:text-xl">
-                I love turning design ideas into functional apps with clean code, reusable components, and optimized performance using technologies like React, Tailwind CSS, Node.js, and AWS.
-              </p>
+        {/* CTAs */}
+        <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
+          <a
+            href="#projects"
+            className="inline-flex items-center justify-center rounded-full bg-cyan-300 px-7 py-3.5 text-sm font-semibold text-slate-950 transition hover:bg-cyan-200 hover:shadow-[0_0_28px_rgba(103,232,249,0.4)]"
+          >
+            Explore Projects
+          </a>
+          <a
+            href="#contact"
+            className="inline-flex items-center justify-center rounded-full border border-white/[0.18] px-7 py-3.5 text-sm font-semibold text-white transition hover:border-cyan-300/50 hover:text-cyan-200"
+          >
+            Let's Talk
+          </a>
+        </div>
 
-              <p className="text-base sm:text-lg md:text-xl">
-                I'm currently seeking full-time opportunities where I can grow as a full-stack developer and contribute to impactful digital products.
-              </p>
-            </div>
-
-            {/* Resume Button */}
-            <div className="mt-10 flex justify-center md:justify-start">
-              <a
-                href={resume}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-6 py-3 bg-gray-800 text-white rounded-xl shadow hover:bg-gray-900 transition"
-              >
-                View Resume
-              </a>
-            </div>
-          </div>
-        </section>
+      </div>
+    </section>
   );
 }
